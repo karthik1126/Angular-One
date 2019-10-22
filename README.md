@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 
+## Setting up a new Angular project (within a existing git folder)
+
+1. Go to the path of the folder where your git repository was installed
+2. Run `ng new --directory=./`
+3. When prompted for project name, type in the same name as the folder name.
+
+
+## Installing bootstrap module into Angular
+  1. Run `npm install --save bootstrap@latest`. This will install a new bootstrap module
+  in node_modules.
+  2. Open angular.json and under styles, copy the path to bootstrap.min.css.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

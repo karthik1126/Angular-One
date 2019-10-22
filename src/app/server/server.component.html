@@ -1,0 +1,6 @@
+Server ID : <input type="text" (input)="enterServerID($event)">&nbsp;&nbsp;&nbsp;
+Server Name : <input type="text" [(ngModel)]="serverName">
+<p>Server with server id: {{serverID}} and serverName: {{getServerName()}} </p>
+
+<button class="btn btn-primary" [disabled]="!allowToAddServer" (click)="addServer($event)">Add Server</button>
+<p>{{ serverCreationStatus }}</p>
