@@ -1,6 +1,17 @@
 Server ID : <input type="text" (input)="enterServerID($event)">&nbsp;&nbsp;&nbsp;
 Server Name : <input type="text" [(ngModel)]="serverName">
-<p>Server with server id: {{serverID}} and serverName: {{getServerName()}} </p>
+<p *ngIf="isServerCreated; else noServer"
+	[ngStyle]="{backgroundColor: getStyle()}"
+	 [ngClass]="{colorWhite: serverID > 0.5}">Server with server id: {{serverID}} and serverName: {{getServerName()}} </p>
 
 <button class="btn btn-primary" [disabled]="!allowToAddServer" (click)="addServer($event)">Add Server</button>
-<p>{{ serverCreationStatus }}</p>
+<!-- <p *ngFor="let item of servers;"
+	[ngStyle]="{backgroundColor: getStyle()}"
+	 [ngClass]="{colorWhite: serverID > 0.5}">{{ item }}</p> -->
+
+<p *ngFor="let item of servers; let i = index"
+	[ngStyle]="{backgroundColor: getStyle()}"
+	 [ngClass]="{colorWhite: i > 3}">{{ item }}</p>
+<ng-template #noServer>
+  <p>No Server Created</p>
+</ng-template>
