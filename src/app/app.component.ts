@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   myapp = 'Angular-One By Karthik!!';
+
+  selectedFeature:string = null;
+
+  navigateToRightComponent(selectedFeature : string) {
+    console.log(" ====== " + selectedFeature);
+    this.selectedFeature = selectedFeature;
+  }
 }

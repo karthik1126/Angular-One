@@ -37,3 +37,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Angular lifecycle
+1. ngOnChanges
+    - Called after a bound input property changes.
+2. ngOnInit
+    - Called once the component is initialized.
+3. ngDoCheck
+    - Called during every change detection runs.
+4. ngAfterContentInit
+    - Called after ng-content has been projected into the view.
+5. ngAfterContentChecked
+    - Called everytime the projected content is checked.
+6. ngAfterViewInit
+    - Called after the components view (child views) are initialized.
+7. ngAfterViewChecked
+    - Called everytime a view (child views) are checked.

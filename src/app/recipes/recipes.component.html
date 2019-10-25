@@ -1,8 +1,9 @@
 <div class="row">
   <div class="col-md-4">
-    <app-recipe-list></app-recipe-list>
+    <app-recipe-list (onIndvRecipeSelected)="selectedRecipe($event)"></app-recipe-list>
   </div>  
-  <div class="col-md-8">
-    <app-recipe-details></app-recipe-details>
+  <div class="col-md-8" *ngIf="recipeSelected">
+    <app-recipe-details
+    [selectedRecipe]="recipe"></app-recipe-details>
   </div>
 </div>
