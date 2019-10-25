@@ -5,5 +5,7 @@
 </div>
 <hr>
 <div class="col-xs-12">
-  The list
+  <a class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">
+    {{item.name}} ({{item.quantity}})
+  </a>
 </div>
