@@ -54,3 +54,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     - Called after the components view (child views) are initialized.
 7. ngAfterViewChecked
     - Called everytime a view (child views) are checked.
+
+## use renderer instead of directly manipulating DOM using the elementRef. This is because angular can be run in environments other than browser where DOM might not be accessible.  

@@ -14,6 +14,7 @@ import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component'
+import { BoldTextDirective } from './custom-directives/bold-text';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipeDetailsComponent,
     ShoppingListComponent,
     RecipeItemComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    BoldTextDirective
   ],
   imports: [
     BrowserModule,
