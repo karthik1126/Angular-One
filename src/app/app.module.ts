@@ -15,6 +15,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component'
 import { BoldTextDirective } from './custom-directives/bold-text';
+import { ColorTextDirective } from './custom-directives/color-text';
+import { NgCustomIfDirective } from './custom-directives/ng-custom-if';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { BoldTextDirective } from './custom-directives/bold-text';
     ShoppingListComponent,
     RecipeItemComponent,
     ShoppingEditComponent,
-    BoldTextDirective
+    BoldTextDirective,
+    ColorTextDirective,
+    NgCustomIfDirective
   ],
   imports: [
     BrowserModule,

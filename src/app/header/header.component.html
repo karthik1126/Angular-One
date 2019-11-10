@@ -3,7 +3,13 @@
 		<a href="#" class="navbar-brand" BoldTextDirective>Recipe Book</a>
 	</div>
 	<div class="navbar-header; col-mx-12">
-		<a herf="#" class="col-md-6" (click)="onSelect('recipe')" style="cursor: pointer" BoldTextDirective>Recipes</a>
-		<a herf="#" class="col-md-6" (click)="onSelect('shoppingList')" style="cursor: pointer" BoldTextDirective>Shopping List</a>
+		<a herf="#" class="col-md-6" (click)="onSelect('recipe')" style="cursor: pointer" 
+			BoldTextDirective
+			ColorTextDirective
+			[highlightedStyle]="'underline'">Recipes</a>
+		<a herf="#" class="col-md-6" (click)="onSelect('shoppingList')" style="cursor: pointer"
+			BoldTextDirective
+			ColorTextDirective
+			highlightedStyle="underline">Shopping List</a>
 	</div>
 </div>

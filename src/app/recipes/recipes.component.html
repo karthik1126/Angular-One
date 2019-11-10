@@ -2,7 +2,7 @@
   <div class="col-md-4">
     <app-recipe-list (onIndvRecipeSelected)="selectedRecipe($event)"></app-recipe-list>
   </div>  
-  <div class="col-md-8" *ngIf="recipeSelected">
+  <div class="col-md-8" *appNgCustomIf="recipeSelected">
     <app-recipe-details
     [selectedRecipe]="recipe"></app-recipe-details>
   </div>

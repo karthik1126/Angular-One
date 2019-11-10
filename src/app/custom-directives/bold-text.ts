@@ -1,4 +1,4 @@
-import { OnInit, Directive, ElementRef, Renderer2 } from '@angular/core';
+import { OnInit, Directive, ElementRef, Renderer2, HostListener } from '@angular/core';
 
 @Directive({
 	selector: '[BoldTextDirective]'
