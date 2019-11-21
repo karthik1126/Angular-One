@@ -55,4 +55,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 7. ngAfterViewChecked
     - Called everytime a view (child views) are checked.
 
-## use renderer instead of directly manipulating DOM using the elementRef. This is because angular can be run in environments other than browser where DOM might not be accessible.  
+## use renderer instead of directly manipulating DOM using the elementRef. This is because angular can be run in environments other than browser where DOM might not be accessible.
+
+## add service in providers in the @Component if you want to create individual instances of the service for that perticualr component. Else below is how it is
+1. at module level : single instance of the service accross the entire application (including components, directives, services)
+2. at app.component level : single instance of the service for app component and all the child components (including components, directives, services).
+3. at other component level : new instance of the service for every component in which service is declared in providers.
+
+## you need to add @Injectable for the service where other service needs to get injected.

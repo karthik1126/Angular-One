@@ -11,7 +11,6 @@ export class AppComponent {
   selectedFeature:string = null;
 
   navigateToRightComponent(selectedFeature : string) {
-    console.log(" ====== " + selectedFeature);
     this.selectedFeature = selectedFeature;
   }
 }
